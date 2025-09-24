@@ -1,0 +1,5 @@
+-- +goose Up
+ALTER TABLE users ALTER COLUMN id TYPE BIGINT;
+
+-- +goose Down
+ALTER TABLE users ALTER COLUMN id TYPE INTEGER;
